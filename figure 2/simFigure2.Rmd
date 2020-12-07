@@ -1,0 +1,246 @@
+```{r}
+
+directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/"
+
+n200b39r0 <- bootCA (n=200, b3=.39, r=0, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .39*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n200b39r0, file_name)
+
+n200b39r1 <- bootCA (n=200, b3=.39, r=1, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .39*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n200b39r1, file_name)
+
+n200b39r2 <- bootCA (n=200, b3=.39, r=2, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .39*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n200b39r2, file_name)
+
+n200b26r0 <- bootCA (n=200, b3=.26, r=0, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .26*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n200b26r0, file_name)
+
+n200b26r1 <- bootCA (n=200, b3=.26, r=1, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .26*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n200b26r1, file_name)
+
+n200b26r2 <- bootCA (n=200, b3=.26, r=2, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .26*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n200b26r2, file_name)
+
+n200b14r0 <- bootCA (n=200, b3=.14, r=0, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .14*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n200b14r0, file_name)
+
+n200b14r1 <- bootCA (n=200, b3=.14, r=1, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .14*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n200b14r1, file_name)
+
+n200b14r2 <- bootCA (n=200, b3=.14, r=2, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .14*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n200b14r2, file_name)
+
+n200b00r0 <- bootCA (n=200, b3=.00, r=0, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .00*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n200b00r0, file_name)
+
+n200b00r1 <- bootCA (n=200, b3=.00, r=1, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .00*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n200b00r1, file_name)
+
+n200b00r2 <- bootCA (n=200, b3=.00, r=2, nbin=6, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 200, "_int", .00*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n200b00r2, file_name)
+
+
+
+
+
+n100b39r0 <- bootCA (n=100, b3=.39, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .39*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n100b39r0, file_name)
+
+n100b39r1 <- bootCA (n=100, b3=.39, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .39*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n100b39r1, file_name)
+
+n100b39r2 <- bootCA (n=100, b3=.39, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .39*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n100b39r2, file_name)
+
+n100b26r0 <- bootCA (n=100, b3=.26, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .26*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n100b26r0, file_name)
+
+n100b26r1 <- bootCA (n=100, b3=.26, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .26*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n100b26r1, file_name)
+
+n100b26r2 <- bootCA (n=100, b3=.26, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .26*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n100b26r2, file_name)
+
+n100b14r0 <- bootCA (n=100, b3=.14, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .14*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n100b14r0, file_name)
+
+n100b14r1 <- bootCA (n=100, b3=.14, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .14*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n100b14r1, file_name)
+
+n100b14r2 <- bootCA (n=100, b3=.14, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .14*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n100b14r2, file_name)
+
+n100b00r0 <- bootCA (n=100, b3=.00, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .00*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n100b00r0, file_name)
+
+n100b00r1 <- bootCA (n=100, b3=.00, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .00*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n100b00r1, file_name)
+
+n100b00r2 <- bootCA (n=100, b3=.00, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/CALMplot R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 100, "_int", .00*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n100b00r2, file_name)
+
+
+
+n500b39r0 <- bootCA (n=500, b3=.39, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .39*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n500b39r0, file_name)
+
+n500b39r1 <- bootCA (n=500, b3=.39, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .39*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n500b39r1, file_name)
+
+n500b39r2 <- bootCA (n=500, b3=.39, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .39*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n500b39r2, file_name)
+
+n500b26r0 <- bootCA (n=500, b3=.26, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .26*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n500b26r0, file_name)
+
+n500b26r1 <- bootCA (n=500, b3=.26, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .26*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n500b26r1, file_name)
+
+n500b26r2 <- bootCA (n=500, b3=.26, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .26*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n500b26r2, file_name)
+
+n500b14r0 <- bootCA (n=500, b3=.14, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .14*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n500b14r0, file_name)
+
+n500b14r1 <- bootCA (n=500, b3=.14, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .14*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n500b14r1, file_name)
+
+n500b14r2 <- bootCA (n=500, b3=.14, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .14*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n500b14r2, file_name)
+
+n500b00r0 <- bootCA (n=500, b3=.00, r=0, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .00*100,
+            "_e", 1, "_lin", 0, "_k", 5000, ".csv", sep="")
+write.csv(n500b00r0, file_name)
+
+n500b00r1 <- bootCA (n=500, b3=.00, r=1, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .00*100,
+            "_e", 1, "_lin", 1, "_k", 5000, ".csv", sep="")
+write.csv(n500b00r1, file_name)
+
+n500b00r2 <- bootCA (n=500, b3=.00, r=2, nbin=3, boot=5000, type="b", power = FALSE, directory = "C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/")
+
+file_name = paste(directory, "sim_n", 500, "_int", .00*100,
+            "_e", 1, "_lin", 2, "_k", 5000, ".csv", sep="")
+write.csv(n500b00r2, file_name)
+
+```
+
+```{r}
+
+m <- matrix(c(1,2,3,1,2,3,4,4,4),nrow = 3,ncol = 3,byrow = TRUE)
+
+png(file="C:/Users/SSacco/Desktop/fig2.PNG",
+    width=1800, height=1400, res=300)
+layout(mat = m,heights = c(1,1.5))
+par(mar=c(4, 4, 3, 0.5))
+
+CALMplot (smooth = FALSE, sim= n200b39r0, nbin=6 , labels=c("Moderator (Percentile)","Interaction Beta"), minmax = c(-3,3), main = "Linear")
+CALMplot (smooth = FALSE, sim= n200b39r2, nbin=6 , labels=c("Moderator (Percentile)",""), minmax = c(-3,3), main = "Exponential")
+CALMplot (smooth = FALSE, sim= n200b39r1, nbin=6 , labels=c("Moderator (Percentile)",""), minmax = c(-3,3), main = "Discontinuous")
+plot(1, type = "n", axes=FALSE, xlab="", ylab="")
+legend(x = "top",inset = 0,
+       legend = c("1", "2", "3","4", "5", "6"),
+       lty=1:6, title="Included Regions", cex=1, horiz = TRUE)
+dev.off()
+```
