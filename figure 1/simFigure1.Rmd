@@ -1,0 +1,150 @@
+```{r}
+
+#Repeat for each sample and beta condition
+
+boot = 5000
+bins = 3
+sample_size = 500
+interaction_size = 0.00
+linear_model = 0
+error_size = 1
+directory ="C:/Users/SSacco/Desktop/HUB/MANUSCRIPTS/WORKING/Statistics - Continuous v. Discrete Visual/plotHarmonics R Package/simulation data/raw/"
+
+harPowRes <- array (NA, dim=c(boot, bins, bins))
+
+for (k in 1:boot){
+  file_name = paste(directory, "sim_n", sample_size, "_int", interaction_size*100, 
+              "_e", error_size, "_lin", linear_model, "_k", boot, "_i", k, ".csv", sep="")
+  data = getData (sample_size, 0, 0, 0, interaction_size, error_size, linear_model)
+  write.csv(data, file_name)
+  
+  har <- findHarmonics (res = searchLoop (data, type="p", nbin=bins), power=F,  nbin=bins)
+  harPow <- har
+  
+  for (i in 1:length(har[1,])){
+    for (j in 1:length(har[,1])){
+      if (is.na(har[i,j]) == F && har[i,j] <= .05){
+        harPow[i,j] = 1
+      }
+      else if (is.na(har[i,j]) == F && har[i,j] > .05){
+        harPow[i,j] = 0
+      }
+    }
+  }
+  harPowRes [k,,] = harPow
+  print(k/boot)
+}
+
+HarPlotRes00_r0 <- rep(NA, bins)
+
+for (i in 1:bins) {
+  HarPlotRes00_r0[i] = mean(harPowRes[,i,], na.rm=T)
+}
+
+file_name = paste(directory, "sim_n", sample_size, "_int", interaction_size*100, 
+              "_e", error_size, "_lin", linear_model, "_k", boot, ".csv", sep="")
+write.csv(as.data.frame(HarPlotRes00_r0), file_name)
+
+linear_model = 1 
+
+harPowRes <- array (NA, dim=c(boot, bins, bins))
+
+for (k in 1:boot){
+  file_name = paste(directory, "sim_n", sample_size, "_int", interaction_size*100, 
+              "_e", error_size, "_lin", linear_model, "_k", boot, "_i", k, ".csv", sep="")
+  data = getData (sample_size, 0, 0, 0, interaction_size, error_size, linear_model)
+  write.csv(data, file_name)
+  
+  har <- findHarmonics (res = searchLoop (data, type="p", nbin=bins), power=F,  nbin=bins)
+  harPow <- har
+  
+  for (i in 1:length(har[1,])){
+    for (j in 1:length(har[,1])){
+      if (is.na(har[i,j]) == F && har[i,j] <= .05){
+        harPow[i,j] = 1
+      }
+      else if (is.na(har[i,j]) == F && har[i,j] > .05){
+        harPow[i,j] = 0
+      }
+    }
+  }
+  harPowRes [k,,] = harPow
+  print(k/boot)
+}
+
+HarPlotRes00_r1 <- rep(NA, bins)
+
+for (i in 1:bins) {
+  HarPlotRes00_r1[i] = mean(harPowRes[,i,], na.rm=T)
+}
+
+file_name = paste(directory, "sim_n", sample_size, "_int", interaction_size*100, 
+              "_e", error_size, "_lin", linear_model, "_k", boot, ".csv", sep="")
+write.csv(as.data.frame(HarPlotRes00_r1), file_name)
+
+linear_model = 2
+
+harPowRes <- array (NA, dim=c(boot, bins, bins))
+
+for (k in 1:boot){
+  file_name = paste(directory, "sim_n", sample_size, "_int", interaction_size*100, 
+              "_e", error_size, "_lin", linear_model, "_k", boot, "_i", k, ".csv", sep="")
+  data = getData (sample_size, 0, 0, 0, interaction_size, error_size, linear_model)
+  write.csv(data, file_name)
+  
+  har <- findHarmonics (res = searchLoop (data, type="p", nbin=bins), power=F,  nbin=bins)
+  harPow <- har
+  
+  for (i in 1:length(har[1,])){
+    for (j in 1:length(har[,1])){
+      if (is.na(har[i,j]) == F && har[i,j] <= .05){
+        harPow[i,j] = 1
+      }
+      else if (is.na(har[i,j]) == F && har[i,j] > .05){
+        harPow[i,j] = 0
+      }
+    }
+  }
+  harPowRes [k,,] = harPow
+  print(k/boot)
+}
+
+HarPlotRes00_r2 <- rep(NA, bins)
+
+for (i in 1:bins) {
+  HarPlotRes00_r2[i] = mean(harPowRes[,i,], na.rm=T)
+}
+
+file_name = paste(directory, "sim_n", sample_size, "_int", interaction_size*100, 
+              "_e", error_size, "_lin", linear_model, "_k", boot, ".csv", sep="")
+write.csv(as.data.frame(HarPlotRes00_r2), file_name)
+
+```
+
+```{r}
+
+m <- matrix(c(1,2,3,1,2,3,4,4,4),nrow = 3,ncol = 3,byrow = TRUE)
+
+png(file="C:/Users/SSacco/Desktop/fig1.PNG",
+    width=1800, height=1400, res=300)
+layout(mat = m,heights = c(1,1.5))
+par(mar=c(4, 4, 3, 0.5))
+plot(round(HarPlotRes00_r0[1:6],2),type='l',ylim=c(0,1), ylab = "Power", xlab = "Included Regions", main = "Linear")
+lines(round(HarPlotRes14_r0[1:6],2), lty='dashed')
+lines(round(HarPlotRes26_r0[1:6],2), lty='dotted')
+lines(round(HarPlotRes39_r0[1:6],2), lty='dotdash')
+plot(round(HarPlotRes00_r2[1:6],2),type='l',ylim=c(0,1), ylab = "", xlab = "Included Regions", main = "Exponential")
+lines(round(HarPlotRes14_r2[1:6],2), lty='dashed')
+lines(round(HarPlotRes26_r2[1:6],2), lty='dotted')
+lines(round(HarPlotRes39_r2[1:6],2), lty='dotdash')
+plot(round(HarPlotRes00_r1[1:6],2),type='l',ylim=c(0,1), ylab = "", xlab = "Included Regions", main = "Discontinuous")
+lines(round(HarPlotRes14_r1[1:6],2), lty='dashed')
+lines(round(HarPlotRes26_r1[1:6],2), lty='dotted')
+lines(round(HarPlotRes39_r11[1:6],2), lty='dotdash')
+plot(1, type = "n", axes=FALSE, xlab="", ylab="")
+legend(x = "top",inset = 0,
+       legend = c("0.00", "0.14", "0.26","0.39"), title = "Interaction Beta",
+       lty=1:4, cex=1, horiz = TRUE)
+dev.off()
+
+```
